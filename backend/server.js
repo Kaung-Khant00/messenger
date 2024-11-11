@@ -14,7 +14,7 @@ const io = new Server(server,{
         origin:"http://localhost:5173"
     }
 })
-server.listen(4000,()=>{
+server.listen("https://messenger-vvb8.onrender.com",()=>{
     console.log("server is listening")
 })
 io.on("connection",(socket)=>{
