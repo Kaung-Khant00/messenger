@@ -1,0 +1,179 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.CONTAINER {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.messenger-container {
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #d1d1d1;
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.hamburger-menu {
+  width: 35px;
+  height: 25px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-between;
+}
+.bar{
+  width: 100%;
+  height: 3.5px;
+  background-color: black;
+}
+.chat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.typing-status {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Messages Container */
+.messages-container {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #e4e4e4;
+}
+
+.message {
+  width:fit-content;
+  background-color: #e6f7ff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.time {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  opacity: 0.6;
+}
+
+.message-text {
+  font-size: 1.08rem;
+  margin-top: 0.2rem;
+}
+
+/* Message Input */
+.message-input-container {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #b8b8b8;
+  background-color: #e6e6e6;
+}
+
+.message-input {
+  height: 100%;
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+.message-input:hover{
+  background-color: #f3f3f3;
+}
+.send-button {
+  height: 100%;
+  width: 75px;
+  border: none;
+  background-color: #b1b1b1;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.send-button:hover{
+  background-color:#919191 ;
+}
+.send-icon {
+  font-size: 1.2rem;
+}
+.messageInfo{
+  display: flex;
+  gap: 10px;
+}
+/*   login  css   */
+.login_container{
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: #e7e7e7;
+}
+.login_box{
+  background-color: #f4f4f4;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius:5px ;
+  padding: 20px;
+}
+
+.login_title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.login_input{
+  display: block;
+  min-width: 90%;
+  padding: 10px;
+}
+.login_button{
+  padding: 10px 20px;
+  margin-top: 10px;
+}
